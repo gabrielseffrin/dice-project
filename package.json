@@ -1,26 +1,37 @@
 {
-  "name": "pomodoro_timer",
+  "name": "rollDice",
   "version": "1.0.0",
   "description": "https://www.figma.com/proto/4m78M3IqJ66LTKFS3S3fuJ/Untitled?node-id=9%3A117&starting-point-node-id=9%3A117",
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "start": "parcel index.html",
+    "build:parcel": "parcel build index.html --public-url /rollDice",
+    "build": "npm run clean:windows && npm run build:parcel",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "clean:linux": "rm -rf dist/*",
+    "clean:windows": "rd /s/q dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gabrielseffrin/projetoWeb2.git"
+    "url": "git+https://github.com/gabrielseffrin/dice-project.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gabrielseffrin/projetoWeb2/issues"
+    "url": "https://github.com/gabrielseffrin/dice-project/issues"
   },
-  "homepage": "https://github.com/gabrielseffrin/projetoWeb2#readme",
+  "homepage": "https://github.com/gabrielseffrin/dice-project#readme",
   "dependencies": {
     "bootstrap": "^5.2.1",
     "jquery": "^3.6.1",
     "jquery-mask-plugin": "^1.14.16",
     "jshint": "^2.13.5"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "parcel": "^2.7.0"
   }
 }
