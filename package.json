@@ -1,18 +1,17 @@
 {
-  "name": "rollDice",
+  "name": "dice-project",
   "version": "1.0.0",
   "description": "https://www.figma.com/proto/4m78M3IqJ66LTKFS3S3fuJ/Untitled?node-id=9%3A117&starting-point-node-id=9%3A117",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "parcel index.html",
-    "build:parcel": "parcel build index.html --public-url /rollDice",
+    "build:parcel": "parcel build index.html --public-url /dice-project",
     "build": "npm run clean:windows && npm run build:parcel",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "clean:linux": "rm -rf dist/*",
-    "clean:windows": "rd /s/q dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean:windows": "rd /s/q dist"
   },
   "repository": {
     "type": "git",
@@ -26,7 +25,7 @@
   "homepage": "https://github.com/gabrielseffrin/dice-project#readme",
   "dependencies": {
     "bootstrap": "^5.2.1",
-    "jquery": "^3.6.1",
+    "jquery": "latest",
     "jquery-mask-plugin": "^1.14.16",
     "jshint": "^2.13.5"
   },
