@@ -18,41 +18,41 @@ let rollDice = () => {
 
     /* result and image dice */
     let result = document.getElementById('result');
-    let imgDice = document.getElementById('imgDice');
+    let dice = document.getElementById('type-dice');
 
     switch (typeDice) {
         case 1:
             result.innerHTML = quantityDice(quantity, 4);
-            imgDice.src = '/assets/images/dice-d4.png';
+            dice.innerHTML = `D4`;
             break;
         case 2:
             result.innerHTML = quantityDice(quantity, 6);
-            imgDice.src = '/assets/images/dice-d6.png';
+            dice.innerHTML = `D6`;
 
             break;
         case 3:
             result.innerHTML = quantityDice(quantity, 8);
-            imgDice.src = '/assets/images/dice-d8.png';
+            dice.innerHTML = `D8`;
 
             break;
         case 4:
             result.innerHTML = quantityDice(quantity, 10);
-            imgDice.src = '/assets/images/dice-d10.png';
+            dice.innerHTML = `D10`;
 
             break;
         case 5:
             result.innerHTML = quantityDice(quantity, 12);
-            imgDice.src = '/assets/images/dice-d12.png';
+            dice.innerHTML = `D12`;
 
             break;
         case 6:
             result.innerHTML = quantityDice(quantity, 20);
-            imgDice.src = '/assets/images/dice-d20.png';
+            dice.innerHTML = `D20`;
 
             break;
         case 7:
             result.innerHTML = quantityDice(quantity, 100);
-            imgDice.src = '/assets/images/dice-d10.png';
+            dice.innerHTML = `100`;
 
             break;
         default:
