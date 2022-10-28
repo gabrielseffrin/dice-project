@@ -1,1 +1,0 @@
-{"mappings":"AAAA;;;;AAIA;;;;AAIA;;;;;AAKA","sources":["assets/style/css.css"],"sourcesContent":["#button-roll {\n    margin: 14%;\n}\n\n#quantity-dice {\n    margin-top: 5%;\n}\n\n.card {\n    margin-top: 5%;\n    margin-bottom: 5%;\n}\n\n#result {\n    font-size: 50px;\n}"],"names":[],"version":3,"file":"index.1550724e.css.map","sourceRoot":"/__parcel_source_root/"}
